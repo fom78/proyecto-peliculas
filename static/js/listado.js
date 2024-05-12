@@ -24,7 +24,7 @@ const obtenerPelis = async () => {
         const PeliAInsertar =`
         <div class="movie-item">
                     <a href="./templates/detail-movie.html" target="_blank">
-                        <img src="${pelis[i].poster_path}" width="250" alt="" class="movie-item-img">
+                        <img src="https://api.themoviedb.org/3${pelis[i].poster_path}" width="250" alt="" class="movie-item-img">
                         <div class="movie-item-detail">
                             <p class="movie-item-detail-title">${pelis[i].title}</p>
                             <p class="movie-item-detail-subtitle">${pelis[i].vote_average}</p>
