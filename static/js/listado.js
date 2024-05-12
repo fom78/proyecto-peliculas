@@ -24,10 +24,10 @@ const obtenerPelis = async () => {
         const PeliAInsertar =`
         <div class="movie-item">
                     <a href="./templates/detail-movie.html" target="_blank">
-                        <img src="./static/img/avengerInfinityWar.jpg" width="250" alt="" class="movie-item-img">
+                        <img src="${pelis[i].poster_path}" width="250" alt="" class="movie-item-img">
                         <div class="movie-item-detail">
-                            <p class="movie-item-detail-title">${i}</p>
-                            <p class="movie-item-detail-subtitle">2020 - 9.6</p>
+                            <p class="movie-item-detail-title">${pelis[i].title}</p>
+                            <p class="movie-item-detail-subtitle">${pelis[i].vote_average}</p>
                         </div>
                     </a>
                 </div>
